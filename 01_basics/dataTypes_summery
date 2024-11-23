@@ -1,0 +1,68 @@
+//  Primitive
+
+//  7 types : String, Number, Boolearn, null, undefined, Symbol, BigInt
+
+const score = 100
+const scoreValue = 100.3
+
+const isLoggedIn = false
+const outsideTemp = null
+let userEmail;
+
+const id = Symbol('123')
+const anotherId = Symbol('123')
+
+console.log(id === anotherId);
+
+// const bigNumber = 3456543576654356754n
+
+
+
+// Reference (Non primitive)
+
+// Array, Objects, Functions
+
+const heros = ["shaktiman", "naagraj", "doga"];//array
+let myObj = {
+    name: "hitesh",
+    age: 22,
+}//objcts
+
+const myFunction = function(){
+    //console.log("Hello world");
+}//function
+
+//console.log(typeof anotherId);
+
+
+//************************Typeof Operator Results******************************************
+/*Undefined	"undefined"
+Null	"object"
+Boolean	"boolean"
+Number	"number"
+String	"string"
+Object (native and does not implement [[Call]])	"object"
+Object (native or host and does implement [[Call]])	"function"
+Object (host and does not implement [[Call]])	Implementation-defined except may not be "undefined", "boolean", "number", or "string".*/
+
+//******************************Stack (primitive)and Heap(non-primitive)*****************************************************
+/* Stack : it gives copy  to another variable 
+Heap : it gives reference to another variable*/
+
+let myName="Ashwini"
+let myAnotherName=myName
+myAnotherName="ashu"
+// console.log(myName);
+// console.log(myAnotherName);
+//it gives two different values because it's stack
+
+let userOne={
+    email:"ashu@gmail.com",
+    upi:"ashu@ybl"
+}
+let userTwo=userOne
+userTwo.email="sam@gmail.com"
+console.log(userOne.email);
+console.log(userTwo.email);
+//it gives two same values because it heap
+
