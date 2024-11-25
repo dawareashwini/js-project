@@ -1,0 +1,43 @@
+const score=400
+//console.log(score);
+
+const balance=new Number(100)
+//console.log(balance)
+
+// console.log(balance.toString().length);//it gives length of the string
+// console.log(score.toFixed(2));//it set the limit of after decimal point
+
+const otherNumber=123.8990
+//console.log(otherNumber.toPrecision(5));//Returns a string containing a number represented either in exponential or 
+                                    //fixed-point notation with a specified number of digits.
+                                    //@param precision — Number of significant digits. Must be in the range 1 - 21, inclusive.
+
+const two=1000000
+//console.log(two.toLocaleString('en-IN'));//it count number by comas
+
+
+//*********************************MATHS*************************************************************************************** */.
+// console.log(Math);
+// console.log(Math.abs(-4));//it convert values
+// console.log(Math.round(5.5));//it round the numbers
+// console.log(Math.ceil(4.3));//it take greatest number
+// console.log(Math.floor(4.8));//it take lowest number
+// console.log(Math.min(4,8,9,4,3,8));
+// console.log(Math.max(4,8,9,4,3,8));
+console.log(Math.random());//it return number between 0-1
+console.log(Math.random()*10+1);//to avoid 0.1,0.2,.............this range.
+console.log( Math.floor(Math.random()*10)+1);//floor gives the zero values that's why it add 1
+
+const min=10
+const max=20
+
+console.log(Math.floor(Math.random()*(max-min+1))+min);
+
+
+
+
+ 
+
+
+
+
