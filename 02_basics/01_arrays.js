@@ -36,3 +36,4 @@ console.log(myn1);
 const myn2=myArr.splice(1,3)//it remove only  what range we set upto that range
 // console.log("c",myArr);
 // console.log(myn2);
+
