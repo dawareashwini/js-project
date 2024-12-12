@@ -1,0 +1,31 @@
+function myFunction() {
+    console.log("A");
+    console.log("S");
+    console.log("H");
+    console.log("U");
+}
+//myFunction()
+
+// function addTwoNumber(number1,number2) {//this are the parameters 
+//     console.log(number1 + number2);
+    
+// }
+//addTwoNumber(4,6)////this are the arguments  
+
+function addTwoNumber(number1,number2) {
+    // let result=number1 + number2
+    // return result
+    return number1 +number2
+}
+const result=addTwoNumber(4,6)
+//console.log("Result: ",result);
+
+function loginUserMessage(username="sam") {//ite jr value  pass keli tr tho loop madhe janar nahi
+    if(username===undefined){
+console.log("Please  enter a username ");
+return
+    }
+    return `${username} just logged in`
+}
+//console.log(loginUserMessage("ashu"))---------ite value pass keli tr first  values  override  hoil
+console.log(loginUserMessage())
