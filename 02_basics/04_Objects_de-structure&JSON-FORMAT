@@ -1,0 +1,52 @@
+//const facebookUsre=new Object()//it is a singletone object
+// console.log(facebookUsre);
+const facebookUsre={}//it is non singletone object
+// console.console.log(facebookUsre);
+facebookUsre.d="123abc"
+facebookUsre.name="sam"
+facebookUsre.isLoggedIn=false
+//console.log(facebookUsre);
+
+const regularUser={
+    email:"ashu@gmail.com",
+    fullname:{
+        userfullname:{
+            firstname:"ashwini",
+            lastname:"daware"
+        }
+    }
+}
+//console.log([regularUser.email,regularUser.fullname.userfullname.firstname]);
+const obj1={1:"a",2:"b"}
+const obj2={3:"c",4:"d"}
+//const obj3=Object.assign({},obj1,obj2)//Copy the values of all of the enumerable own properties from 
+//one or more source objects to a target object. Returns the target object.
+const obj3={...obj1,...obj2}//this also combin two or more objects 
+//console.log(obj3);//{ '1': 'a', '2': 'b', '3': 'c', '4': 'd' }
+
+// console.log(Object.keys(facebookUsre));
+// console.log(Object.values(facebookUsre));
+// console.log(Object.entries(facebookUsre));
+//console.log(facebookUsre.hasOwnProperty('name'));//it give true or false if there  property  is available  or not
+
+
+const course={
+    courseName:"js in hindi",
+    price:"777",
+    courseInstructr:"sam"
+}
+//course.courseInstructr
+const {courseInstructr:cs}=course
+//console.log(courseInstructr);
+console.log(cs)
+
+// {
+//     "name":"ashu",
+//     "price":"free"
+// }//it is the json format object
+
+// [
+//     {},
+//     {},
+//     {}
+// ]//Array object
